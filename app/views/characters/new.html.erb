@@ -1,0 +1,12 @@
+<body>
+  <div>
+  <%= simple_form_for do |f| %>
+      <%= f.input :age %>
+      <% options = 'USA', 'English', 'French', 'Italian', 'German', 'Russian', 'Czech', 'Moroccan', 'Greek', 'Turkish', 'Saudi Arabian', 'Spanish', 'Mexican', 'Brazilian', 'Indian', 'Mongolian', 'Thai', 'Vienamese', 'Egyptian', 'Etheopian', 'South African', 'Nigerian', 'Japanese', 'Chinese', 'South Korean', 'Klingon', 'Elvish', 'Dwarvin', 'Halfling', 'Orcish' %>
+      <%= f.input :nationality, prompt: 'Choose the nationality ', collection: options, required: true%>
+  <% end %>
+
+  </div>
+  <div>
+  </div>
+</body>
