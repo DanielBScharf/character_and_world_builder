@@ -20,7 +20,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_10_193837) do
     t.integer "age"
     t.string "attributes"
     t.string "background"
-    t.bigint "user_id", null: false
+    t.bigint "user_id"
     t.bigint "world_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
